@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta nome="viewport"content="width=device-width, initial-scale=1.0">
-    <title>Aula 07 de CSS3</title>
+    <title>Aula 10 de CSS3</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<main id="tela-principal">
-    <section class="conteudo">
-        <h1>Login</h1>
-        <div id="linha"></div>
-
-        <form action="" method="post">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Nome"/>
-                <div class="underline">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="E-mail"/>
-                <div class="underline">
-            </div>
-
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Senha"/>
-                <div class="underline">
-            </div>
-            </div>
-            <div class="form-group">
-                <button type="submit"
-                    id="bt-logar">Logar
-                </button>
-            </div>
-            </form>
-        </section>
-    </main>
+    <main Class="tela-principal">
+        <span id="topo"></span>
+    <header class="topo">
+        <nav>
+            <ul id="menu-superior">
+                <li><a href="aula10.html">Home</a></li>
+                <li><a href="layouts-flex-grid.html">Layouts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Layout Flex</h1> 
+    <section id="box01" class="conteudo">
+        <article class="textos">
+            Esta é uma box 01 de textos. Vamos testar algumas formatações.
+        </article>
+        <article class="textos">
+            Esta é uma box 02 de textos.Nesta aqui tembém.
+        </article>
+        <article class="textos">
+            Esta é uma box 03 de textos.E claro, nesta tembém.
+        </article>
+    </section>
+    <section id="box02" class="conteudo">
+        <figure class="imagens">
+            <img src="imagens/cafe.jpg" alt="cafe"/>
+            <figcaption>Foto 01</figcaption>
+        </figure>
+        <figure class="imagens">
+            <img src="imagens/PC.jpg" alt="cafe"/>
+            <figcaption>Foto 02</figcaption>
+        </figure>
+        <figure class="imagens">
+            <img src="imagens/cod.jpg" alt="cafe"/>
+            <figcaption>Foto 03</figcaption>
+        </figure>
+    </section>
+    <footer class="rodape">
+    <nav>
+        <ul id="menu-inferior">
+            <li><a href="#topo">Ir para o topo</a></li>
+        </ul>
+    </nav>
+    <p>Desenvolvido por Edson Maia &copy; 2021</p>
+    </footer>
+</main>
 </body>
 </html>
