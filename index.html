@@ -1,57 +1,153 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta nome="viewport"content="width=device-width, initial-scale=1.0">
-    <title>Aula 10 de CSS3</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <main Class="tela-principal">
-        <span id="topo"></span>
-    <header class="topo">
-        <nav>
-            <ul id="menu-superior">
-                <li><a href="aula10.html">Home</a></li>
-                <li><a href="layouts-flex-grid.html">Layouts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Layout Flex</h1> 
-    <section id="box01" class="conteudo">
-        <article class="textos">
-            Esta é uma box 01 de textos. Vamos testar algumas formatações.
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta nome="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Aula 10 de CSS3</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main id="tela">
+            <header id="topo">
+                <h1 id="logo">Layouts Flex e Grid</h1>
+                <nav>
+                    <ul id="menu-superior">
+                        <li><a href="#">Fotos</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Músicas</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <h1>Flex-Box</h1>
+        <section class="conteudo">
+            <article class="foto">
+                <figure id="foto01">
+                    <img src="https://picsum.photos/300/300" alt="foto 1"/>
+                    <figcaption>foto 1</figcaption>
+                </figure>
+            </article>
+            <article class="foto">
+                <figure id="foto02">
+                    <img src="https://picsum.photos/300/300" alt="foto 2"/>
+                    <figcaption>foto 2</figcaption>
+                </figure>
+            </article>
+            <article class="foto">
+                <figure id="foto03">
+                    <img src="https://picsum.photos/300/300" alt="foto 3"/>
+                    <figcaption>foto 3</figcaption>
+                </figure>
+            </article>
         </article>
-        <article class="textos">
-            Esta é uma box 02 de textos.Nesta aqui tembém.
+        <article class="foto">
+            <figure id="foto04">
+                <img src="https://picsum.photos/300/300" alt="foto 4"/>
+                <figcaption>foto 4</figcaption>
+            </figure>
         </article>
-        <article class="textos">
-            Esta é uma box 03 de textos.E claro, nesta tembém.
+        <article class="foto">
+            <figure id="foto05">
+                <img src="https://picsum.photos/300/300" alt="foto 5"/>
+                <figcaption>foto 5</figcaption>
+            </figure>
+        </article>
+
+        </section>
+
+        <h1>Grid 1</h1>
+
+        <section class="feed-em-grid">
+            <article class="foto-grid">
+                <figure id="foto01">
+                    <img src="https://picsum.photos/300/300" alt="foto 1"/>
+                </figure>
+                <figcaption>foto 1</figcaption>
+            </article>
+
+            <article class="foto-grid">
+                <figure id="foto02">
+                    <img src="https://picsum.photos/300/300" alt="foto 2"/>
+                </figure>
+                <figcaption>foto 2</figcaption>
+            </article>
+
+            <article class="foto-grid">
+                <figure id="foto03">
+                    <img src="https://picsum.photos/300/300" alt="foto 3"/>
+                </figure>
+                <figcaption>foto 3</figcaption>
+            </article>
+
+            <article class="foto-grid">
+                <figure id="foto04">
+                    <img src="https://picsum.photos/300/300" alt="foto 4"/>
+                </figure>
+                <figcaption>foto 4</figcaption>
+            </article>
+            
+            <article class="foto-grid">
+                <figure id="foto05">
+                    <img src="https://picsum.photos/300/300" alt="foto 5"/>
+                </figure>
+                <figcaption>foto 5</figcaption>
+            </article>
+
+            <article class="foto-grid">
+                <figure id="foto06">
+                    <img src="https://picsum.photos/300/300" alt="foto 6"/>
+                </figure>
+                <figcaption>foto 6</figcaption>
+            </article>
+
+            <article class="foto-grid">
+                <figure id="foto07">
+                    <img src="https://picsum.photos/300/300" alt="foto 7"/>
+                </figure>
+                <figcaption>foto 7</figcaption>
+            </article>
+            
+            <article class="foto-grid">
+                <figure id="foto08">
+                    <img src="https://picsum.photos/300/300" alt="foto 8"/>
+                </figure>
+                <figcaption>foto 8</figcaption>
+            </article>
+
+        </section>
+
+        <h1>Grid 2 - Exemplo Videos</h1>
+
+        <section class="grid2">
+            <article class="video">
+                <figure id="video01">
+                    <img src="https://picsum.photos/854/480" alt="Video 1"/>
+                <figcaption>Video 1</figcaption>
+                </figure>
+            </article>
+
+            <article class="sidebar">
+                <div>
+                    <figure id="Video02">
+                        <img src="https://picsum.photos/300/200" alt="Video 2">
+                    <figcaption>Video 2</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure id="Video03">
+                        <img src="https://picsum.photos/300/200" alt="Video 3">
+                    <figcaption>Video 3</figcaption>
+                    </figure>
+                </div>
+                <div>
+            <figure id="Video04">
+                    <img src="https://picsum.photos/300/200" alt="Video 4"/>
+                    <figcaption>Video 4</figcaption>
+                    </figure>
+                </div>
+                </article>
         </article>
     </section>
-    <section id="box02" class="conteudo">
-        <figure class="imagens">
-            <img src="imagens/cafe.jpg" alt="cafe"/>
-            <figcaption>Foto 01</figcaption>
-        </figure>
-        <figure class="imagens">
-            <img src="imagens/PC.jpg" alt="cafe"/>
-            <figcaption>Foto 02</figcaption>
-        </figure>
-        <figure class="imagens">
-            <img src="imagens/cod.jpg" alt="cafe"/>
-            <figcaption>Foto 03</figcaption>
-        </figure>
-    </section>
-    <footer class="rodape">
-    <nav>
-        <ul id="menu-inferior">
-            <li><a href="#topo">Ir para o topo</a></li>
-        </ul>
-    </nav>
-    <p>Desenvolvido por Edson Maia &copy; 2021</p>
-    </footer>
 </main>
 </body>
 </html>
